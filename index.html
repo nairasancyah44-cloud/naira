@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hijrah Store - Hijab Syar'i & Gamis Kekinian</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="Hijrah Store logo" class="logo" />
+        <h1>Hijrah Store</h1>
+      </div>
+      <nav class="nav">
+        <a href="#products">Produk</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#kritik-saran">Kritik & Saran</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <div class="cart">
+        <button id="cartBtn" aria-label="Keranjang">Keranjang (<span id="cartCount">0</span>)</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <h2>Hijab Syar'i & Gamis Kekinian</h2>
+        <p>Motif banyak, model oval, bahan nyaman — pilih gaya syar'i tanpa kompromi.</p>
+        <a class="cta" href="#products">Lihat Produk</a>
+      </div>
+      <div class="hero-right">
+        <img src="assets/product1.svg" alt="Contoh produk" />
+      </div>
+    </section>
+
+    <section id="slider" class="container slider-section">
+      <h3>Produk Terlaris</h3>
+      <div class="slider" id="productSlider">
+        <!-- Slides injected by JS (max 5) -->
+      </div>
+      <div class="slider-controls">
+        <button id="prevSlide">◀</button>
+        <button id="nextSlide">▶</button>
+      </div>
+    </section>
+
+    <section id="products" class="container products-section">
+      <h3>Semua Produk</h3>
+      <div class="products-grid" id="productsGrid">
+        <!-- Product cards injected by JS -->
+      </div>
+    </section>
+
+    <section id="testimoni" class="container testimonials-section">
+      <h3>Testimoni Pelanggan</h3>
+      <div id="testiList" class="testi-list">
+        <!-- Testimoni injected by JS from localStorage -->
+      </div>
+
+      <form id="testiForm" class="testi-form">
+        <h4>Tambah Testimoni</h4>
+        <input type="text" id="namaTesti" placeholder="Nama" required />
+        <textarea id="pesanTesti" placeholder="Tulis testimoni..." required></textarea>
+        <button type="submit">Kirim Testimoni</button>
+      </form>
+    </section>
+
+    <section id="kritik-saran" class="container feedback-section">
+      <h3>Kritik & Saran</h3>
+      <p>Kami menghargai setiap masukan. Isi formulir berikut untuk membantu kami menjadi lebih baik.</p>
+      <form id="feedbackForm" class="feedback-form">
+        <input type="text" id="fbName" placeholder="Nama (opsional)" />
+        <textarea id="fbMessage" placeholder="Kritik atau saran..." required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+      <div id="feedbackThanks" class="hidden">Terima kasih atas masukan Anda!</div>
+    </section>
+
+    <section id="kontak" class="container contact-section">
+      <h3>Kontak & Alamat</h3>
+      <p>Alamat toko: Jl. Dipenggori 74, Bogor</p>
+      <p>Email: <a href="mailto:hijrahstore@example.com">hijrahstore@example.com</a></p>
+      <button id="checkoutBtn" class="checkout">Checkout</button>
+    </section>
+  </main>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close" id="closeCart">×</button>
+      <h3>Keranjang Belanja</h3>
+      <div id="cartItems"></div>
+      <div class="cart-actions">
+        <strong>Total: Rp <span id="cartTotal">0</span></strong>
+        <button id="checkoutNow" class="checkout">Lanjutkan ke Pembayaran</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Hijrah Store — Warna: Marun & Putih</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

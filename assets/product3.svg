@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <ellipse cx="600" cy="420" rx="360" ry="420" fill="#f8f0f0"/>
+  <g transform="translate(0,640)">
+    <rect x="150" width="900" height="360" rx="30" fill="#fafafa"/>
+    <text x="600" y="180" font-size="60" text-anchor="middle" fill="#7b0a16" font-family="Arial, sans-serif">Gamis Model 1</text>
+  </g>
+</svg>
